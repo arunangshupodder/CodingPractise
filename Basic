@@ -62,3 +62,24 @@ do
 done
 let sum=a+b
 echo "The sum: $sum"
+############Chapter 2 - 1#############
+let year=804
+if [ `expr $year % 400` == 0 ] || [ `expr $year % 4` == 0 -a `expr $year % 100` != 0 ]
+then
+    echo "$year is a leap year."
+else
+    echo "$year is not a leap year."
+fi
+############Chapter 2 - 10#############
+let stock=1000
+let order=1200
+let credit=0
+if [ $order -le $stock -a $credit == 1 ]
+then
+    echo "Entire requirement supplied: $order"
+elif [ $credit == 1 ]
+then
+    echo "Credit not good."
+else
+    echo "Partial requirement supplied: $stock"
+fi

@@ -2,7 +2,7 @@
 #      Questions from Let Us C      #
 #####################################
 
-############Chapter 1 - 1############
+############ Chapter 1 - 1 ############
 let basic_sal=1000
 let dearness_all=(40*basic_sal)/100
 let hra=(20*basic_sal)/100
@@ -10,7 +10,7 @@ let gross=basic_sal+dearness_all+hra
 
 echo "Gross Salary: $gross"
 
-############Chapter 1 - 2############
+############ Chapter 1 - 2 ############
 # bash only supports integers. Use bc.
 #pipe with bc will only work when we need output. Not assignment.
 let dist_km=200
@@ -19,11 +19,11 @@ dist_ft=$(bc <<< "$dist_km*3280.84")
 
 echo "Distance(in mts): $dist_mt"
 echo "Distance(in ft): $dist_ft"
-############Chapter 1 - 4############
+############ Chapter 1 - 4 ############
 f=32
 c=$(bc <<< "((f-32)*5)/9")
 echo "Temp in Centigrade: $c"
-############Chapter 1 - 6############
+############ Chapter 1 - 6 ############
 let a=3
 let b=4
 let temp=a
@@ -31,7 +31,7 @@ let a=b
 let b=temp
 echo "$a"
 echo "$b"
-############Chapter 1 - 7############
+############ Chapter 1 - 7 ############
 let n=12345
 let sum=0
 while [ $n -gt 0 ]
@@ -40,7 +40,7 @@ do
     let n=n/10
 done
 echo "The sum: $sum"
-############Chapter 1 - 8############
+############ Chapter 1 - 8 ############
 let n=12345
 let m=0
 while [ $n -gt 0 ]
@@ -51,7 +51,7 @@ do
     echo "n: $n"
 done
 echo "The reversed number: $m"
-############Chapter 1 - 9############
+############ Chapter 1 - 9 ############
 let n=12345
 let a=n%10
 let b=0
@@ -62,7 +62,7 @@ do
 done
 let sum=a+b
 echo "The sum: $sum"
-############Chapter 2 - 1#############
+############ Chapter 2 - 1 #############
 let year=804
 if [ `expr $year % 400` == 0 ] || [ `expr $year % 4` == 0 -a `expr $year % 100` != 0 ]
 then
@@ -70,7 +70,7 @@ then
 else
     echo "$year is not a leap year."
 fi
-############Chapter 2 - 10#############
+############ Chapter 2 - 10 #############
 let stock=1000
 let order=1200
 let credit=0
